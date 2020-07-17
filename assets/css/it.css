@@ -1,0 +1,270 @@
+
+
+
+
+/*my code*/
+
+* {
+    text-decoration:none;
+}
+
+
+
+/*nav bar starts here */
+header {
+    background-color:lightblue;
+    width:100%;
+    height: 100px;
+}
+
+header .Header-NW {
+    margin: 31px 0;
+    padding: 0px 20px 0px 40px;
+   height:38px;
+    font-family:Georgira;
+    font-size:24px;
+    font-weight: 900;
+    color:#111;
+    text-transform: uppercase;
+    display:block;
+    margin:0 auto;
+    text-align: left;
+    padding:20px 0;
+
+
+}
+
+ /*This is so we style all three parts of the nav here*/
+
+header nav ul {
+    display: block;
+    margin:20px  0px   0px     20px;
+   /* This will center nav */
+    width:fit-content;
+    float:left;
+}
+
+
+
+
+header nav ul li {
+    display: inline-block;
+   /* if you dont use the float there will be a slight gap between the links*/
+    float:left;
+    list-style: none;
+    /*top and bottom / left and right*/
+    padding:0 16px;
+
+}
+
+header nav ul li a {
+    font-family:Georgira, cursive;
+    font-size:14px;
+    color:#111;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover{
+  color:#96FFE9;
+}
+header .Source-INFO{
+    display:none;
+}
+
+
+
+
+
+/* screeen change  */
+/* @media  rule to include a block of CSS properties only if a certain condition is true. */
+@media only screen and (min-width:1000px) {
+    header .Header-NW {
+        margin:31px 0;
+        text-align: left;
+        padding: 0px 20px 0px 40px;
+        border-right: 3px solid #111;
+        float:left;
+        line-height: 38px; /*to center the line-height: you need to subtract the header height by 38 and then that will give you 62 then you divide that by 2 that will give you 31 for your top and bottom margin.*/
+    }
+    header nav ul {
+        /* top right bottom left*/
+    margin:20px  0px   0px     20px;
+    float:left;
+
+}
+
+/* screen change ends  */
+
+
+header nav ul li {
+    display: inline-block;
+   /* if you dont use the float there will be a slight gap between the links*/
+    float:left;
+    list-style: none;
+    /*top and bottom / left and right*/
+    padding:0 16px;
+
+}
+
+header nav ul li a {
+    line-height: 60px; 
+}
+ 
+}
+
+/*Index*/
+
+.index-Hero {
+
+    width:100%;
+    height: 100vh; /*vh means to view height subtracted 100vh because it was the height of the header   */
+    background-image:url("https://cdn.tourcms.com/a/11676/3098/1/large.jpg");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover; /*This means its going to cover the whole banner no matter the height or the width. it will always cover the banner*/
+    display: table;
+}
+/*tabel cell figure out what it is.*/
+.verticle-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.index-Hero h2 {
+    font-size:60px;
+    font-weight:900;
+     line-height: 70px;
+    color: #fff;
+    text-align:center;
+    text-shadow: 3px 3px  8px #111; 
+}
+
+.index-Hero h1 {
+    font-family:playfair display, Georgira, cursive;
+    font-size:20px;
+    font-weight:100;
+    font-style: italic;
+    line-height: 40px;
+    color: #fff;
+    text-align:center;
+    text-shadow: 3px 3px  8px #111; 
+}
+
+
+.index-lower-content div {  /* this will style all divs which means  all boxes instead of having to style each box */
+    margin:16px;
+  /* you subtract 20px because have 10px of each side of the box. */
+    height: 100px;
+    background-image:url("https://i.imgur.com/ySLiJ.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+
+.index-lower-content div h3 {
+    font-family:playfair display, Georgira, cursive;
+    font-size:16px;
+    font-weight:900;
+    line-height: 40px;
+    color: #fff;
+    text-align:center;
+}
+
+
+.index-lower-content div p {
+    font-family:playfair display, Georgira, cursive;
+    font-size:13px;
+    font-weight:900;
+    line-height: 17px;
+    color: #fff;
+    text-align:center; 
+}
+
+/*index ends*/ 
+
+.WC{
+  background:white;
+  width:28%;
+  margin: 5px;
+  padding: 5px;
+  border-radius:8px;
+  font-size:70px;
+}
+
+.brief-content {
+  width:100%;
+  background-color:grey;
+  font-family:georgia,cursive;
+  font-size:30px;
+  border: solid black 5px; 
+  margin-top: 10px;
+}
+
+body {
+    background:lightblue;
+
+}
+
+.wrap {
+    width:1000px;
+    margin:auto;
+    margin-top:110px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0;
+    transition:0.4s;
+    width:300px;
+    background:#fff;
+    text-align:center;
+    font-size:16px;
+    font-family:Georgia;
+    float:left;
+    margin:10px;
+
+}
+
+
+
+/*footer starts*/
+footer {
+    width: calc(100% - 80px);
+    padding:40px 40px;
+    margin-top:20px;
+    background-color: #6D868C;
+    overflow: hidden; /*dont know why but it fixes my footer and extends background to the bottom */
+    
+}
+
+footer a {
+  color:black;
+}
+
+footer ul {
+width:fit-content; /*This will always change the width of the menu depending on how long menu items are. */
+float:left;
+padding-left:20px;
+}
+
+
+footer ul li {
+    display: block;
+    list-style: none;
+      font-family:Georgira, cursive;
+    font-size:16px;
+    color:black;
+    cursor: pointer;
+    line-height: 40px;
+}
+
+.footer-icons {
+    width:40px;
+    float:right;
+
+}
+
+.footer-icons img {
+    width:100%;
+    margin-bottom:5px; /*gives spacing blow the images/icons*/
+}

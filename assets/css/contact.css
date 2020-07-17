@@ -1,0 +1,261 @@
+
+
+/*my code*/
+
+* {
+    text-decoration:none;
+}
+
+
+
+/*nav bar starts here */
+header {
+    background-color: #fff;
+    width:100%;
+    height: 100px;
+}
+
+header .Header-NW {
+    font-family:Georgira;
+    font-size:24px;
+    font-weight: 900;
+    color:#111;
+    text-transform: uppercase;
+    display:block;
+    margin:0 auto;
+    text-align: center;
+    padding:20px 0;
+
+}
+
+ /*This is so we style all three parts of the nav here*/
+
+header nav ul {
+    display: block;
+    margin:0 auto;
+   /* This will center nav */
+    width:fit-content;
+}
+
+
+
+
+header nav ul li {
+    display: inline-block;
+   /* if you dont use the float there will be a slight gap between the links*/
+    float:left;
+    list-style: none;
+    /*top and bottom / left and right*/
+    padding:0 16px;
+
+}
+
+header nav ul li a {
+    font-family:Georgira, cursive;
+    font-size:14px;
+    color:#111;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover{
+  color:#96FFE9;
+}
+header .Source-INFO{
+    display:none;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #96FFE9;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #38E4E8;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+
+/*This will change the content to a desktop version once you change width to  1000px */
+@media only screen and (min-width:1000px) {
+    header .Header-NW {
+        margin:31px 0;
+        text-align: left;
+        padding: 0px 20px 0px 40px;
+        border-right: 3px solid #111;
+        float:left;
+        line-height: 38px; /*to center the line-height: you need to subtract the header height by 38 and then that will give you 62 then you divide that by 2 that will give you 31 for your top and bottom margin.*/
+    }
+    header nav ul {
+        /* top right bottom left*/
+    margin:20px  0px   0px     20px;
+    float:left;
+
+}
+
+
+
+
+header nav ul li {
+    display: inline-block;
+   /* if you dont use the float there will be a slight gap between the links*/
+    float:left;
+    list-style: none;
+    /*top and bottom / left and right*/
+    padding:0 16px;
+
+}
+
+header nav ul li a {
+    line-height: 60px; 
+}
+
+}
+
+/*screen changing ends here */
+
+
+/*Index*/
+
+.index-Hero {
+
+    width:100%;
+    height: 100vh; /*vh means to view height it will be a 100% of the device height*/
+    background-image:url("https://cdn.tourcms.com/a/11676/3098/1/large.jpg");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover; /*This means its going to cover the whole banner no matter the height or the width. it will always cover the banner*/
+    display: table;
+}
+/*tabel cell figure out what it is.*/
+.verticle-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.index-Hero h2 {
+    font-size:60px;
+    font-weight:900;
+     line-height: 70px;
+    color: #fff;
+    text-align:center;
+    text-shadow: 3px 3px  8px #111; 
+}
+
+.index-Hero h1 {
+    font-family:playfair display, Georgira, cursive;
+    font-size:20px;
+    font-weight:100;
+    font-style: italic;
+    line-height: 40px;
+    color: #fff;
+    text-align:center;
+    text-shadow: 3px 3px  8px #111; 
+}
+
+
+.index-lower-content div {  /* this will style all divs which means  all boxes instead of having to style each box */
+    margin:16px;
+    /* you subtract 20px because have 10px of each side of the box. */
+    height: 100px;
+    background-image:url("https://i.imgur.com/ySLiJ.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+.index-lower-content div h3 {
+    font-family:playfair display, Georgira, cursive;
+    font-size:16px;
+    font-weight:900;
+    line-height: 40px;
+    color: #fff;
+    text-align:center;
+}
+
+
+.index-lower-content div p {
+    font-family:playfair display, Georgira, cursive;
+    font-size:25px;
+    font-weight:900;
+    line-height: 23px;
+    color: #fff;
+    text-align:center; 
+}
+
+
+/*index ends*/ 
+
+/*footer starts*/
+footer {
+    width: calc(100% - 80px);
+    padding:40px 40px;
+    margin-top:20px;
+    background-color: #6D868C;
+    overflow: hidden; /*dont know why but it fixes my footer and extends background to the bottom */
+    
+}
+
+footer ul {
+width:fit-content; /*This will always change the width of the menu depending on how long menu items are. */
+float:left;
+padding-left:20px;
+}
+
+
+footer a {
+  color:black;
+}
+
+footer ul li {
+    display: block;
+    list-style: none;
+      font-family:Georgira, cursive;
+    font-size:16px;
+    color:black;
+    cursor: pointer;
+    line-height: 40px;
+}
+
+
+
+.footer-icons {
+    width:40px;
+    float:right;
+
+}
+
+.footer-icons img {
+    width:100%;
+    margin-bottom:5px; /*gives spacing blow the images/icons*/
+}
+
+
+
+
+
+
