@@ -112,7 +112,7 @@ header nav ul li a {
 
     width:100%;
     height: 100vh; /*vh means to view height it will be a 100% of the device height*/
-    background-image:url("https://cdn.tourcms.com/a/11676/3098/1/large.jpg");
+    background-image:url("../../Images/New\ york\ Site\ background-min.jpg");
     background-repeat:no-repeat;
     background-position: center;
     background-size: cover; /*This means its going to cover the whole banner no matter the height or the width. it will always cover the banner*/
@@ -149,7 +149,7 @@ header nav ul li a {
     margin:16px;
     /* you subtract 32px because have 10px of each side of the box. */
     height: 100px;
-    background-image:url("https://i.imgur.com/ySLiJ.jpg");
+    background-image:url('../../Images/sitebackground\ box\ blue-min.jpg');
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -223,7 +223,5 @@ footer ul li  {
 
 
 
-
-/* Mobile View */
 
  
