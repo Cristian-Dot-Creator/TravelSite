@@ -152,8 +152,8 @@ header nav ul li a {
     background-image:url("https://i.imgur.com/ySLiJ.jpg");
     background-size:cover;
     background-repeat: no-repeat;
-
 }
+
 .index-lower-content div h3 {
     font-family:playfair display, Georgira, cursive;
     font-size:16px;
@@ -175,6 +175,8 @@ header nav ul li a {
 
 
 /*index ends*/ 
+
+
 
 /*footer starts*/
 footer {
@@ -222,6 +224,6 @@ footer ul li  {
 
 
 
-
+/* Mobile View */
 
  
