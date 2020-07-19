@@ -52,14 +52,14 @@ header nav ul li {
 
 header nav ul li a {
     font-family:Georgira, cursive;
-    font-size:14px;
+    font-size:1.2rem;
     color:#111;
     cursor: pointer;
     text-transform: uppercase;
 }
 
 header nav ul li a:hover{
-  color:#96FFE9;
+    Box-shadow:0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 header .Source-INFO{
     display:none;
@@ -101,7 +101,26 @@ header nav ul li a {
     line-height: 60px; 
 }
 
+
 }
+
+
+ @media only screen and (max-width:400px) {
+    .index-lower-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: fit-content;
+    }
+
+    
+.index-lower-content div p {
+    display: none;
+    font-weight:500;
+    color: #fff;
+    text-align:center;
+}
+} 
 
 /*screen changing ends here */
 
@@ -156,8 +175,8 @@ header nav ul li a {
 
 .index-lower-content div h3 {
     font-family:playfair display, Georgira, cursive;
-    font-size:16px;
-    font-weight:900;
+    font-size:1.5rem;
+    font-weight:500;
     line-height: 40px;
     color: #fff;
     text-align:center;
@@ -166,8 +185,8 @@ header nav ul li a {
 
 .index-lower-content div p {
     font-family:playfair display, Georgira, cursive;
-    font-size:25px;
-    font-weight:900;
+    font-size:1.5rem;
+    font-weight:500;
     line-height: 23px;
     color: #fff;
     text-align:center; 
