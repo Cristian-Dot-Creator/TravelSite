@@ -17,7 +17,7 @@ header {
 
 header .Header-NW {
     font-family:Georgia, Arial;
-    font-size:24px;
+    font-size:2.4rem;
     font-weight: 900;
     color:#111;
     text-transform: uppercase;
@@ -42,6 +42,7 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
+    
    /* if you dont use the float there will be a slight gap between the links*/
     float:left;
     list-style: none;
@@ -52,7 +53,7 @@ header nav ul li {
 
 header nav ul li a {
     font-family:Georgira, cursive;
-    font-size:1.2rem;
+    font-size:1.7rem;
     color:#111;
     cursor: pointer;
     text-transform: uppercase;
@@ -103,7 +104,8 @@ header nav ul li a {
 
 
 }
-
+/* nav bar ends  */
+/* mobile view */
 
  @media only screen and (max-width:400px) {
     .index-lower-content {
@@ -111,7 +113,11 @@ header nav ul li a {
         flex-direction: column;
         justify-content: center;
         height: fit-content;
-    }
+        display: -webkit-box; 
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex; 
+            }
 
     
 .index-lower-content div p {
@@ -137,7 +143,7 @@ header nav ul li a {
     background-size: cover; /*This means its going to cover the whole banner no matter the height or the width. it will always cover the banner*/
     display: table;
 }
-/*tabel cell figure out what it is.*/
+
 .verticle-center {
     display: table-cell;
     vertical-align: middle;
